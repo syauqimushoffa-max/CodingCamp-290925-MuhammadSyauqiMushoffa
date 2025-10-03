@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Todo List</h1>
+            <p class="subtitle"></p>
+        </header>
+
+        <section class="card">
+            <form id="todo-form" autocomplete="off">
+                <div class="row">
+                    <label for="todo-input">Tugas</label>
+                    <input id="todo-input" type="text" placeholder=>
+                </div>
+
+                <div class="row">
+                    <label for="date-input">Tanggal</label>
+                    <input id="date-input" type="date" />
+                </div>
+
+                <div class="row actions">
+                    <button id="add-btn" type="submit">Tambah</button>
+                    <button id="clear-btn" type="button" class="secondary">Hapus Semua</button>
+                </div>
+
+                <p id="form-error" class="error" aria-live="polite"></p>
+            </form>
+        </section>
+ <section class="card filters">
+      <div class="row">
+        <label for="search-input">Cari</label>
+        <input id="search-input" type="search" placeholder="Cari teks tugas..." />
+      </div>
+
+      <div class="row">
+        <label for="filter-status">Status</label>
+        <select id="filter-status">
+          <option value="all">Semua</option>
+          <option value="pending">Belum Selesai</option>
+          <option value="completed">Selesai</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="filter-date">Tanggal</label>
+        <select id="filter-date">
+          <option value="all">Semua</option>
+          <option value="today">Hari ini</option>
+          <option value="this_week">Minggu ini</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="card list-card">
+      <h2>Daftar Tugas</h2>
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+      <p id="empty-message" class="muted">Belum ada tugas. Tambah tugas di form atas.</p>
+    </section>
+        <footer class="footer">
+            <small>Muhammad Syauqi Mushoffa 29/09/2025</small>
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
