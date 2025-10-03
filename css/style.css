@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #200046;
+    color: #000000;
+}
+
+.container {
+    max-width: 500px;
+    margin: 28px auto;
+    padding: 19px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #a8df12;
+}
+
+.card {
+    background: #a8df12;
+    border-radius: 13px;
+    padding: 14px;
+    box-shadow: 0 6px 14px rgba(235, 229, 229, 0.06);
+    margin-bottom: 14px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+    .row label {
+        font-size: 13px;
+        color: #080606;
+    }
+
+    .row input[type="text"], .row input[type="date"], .row input[type="search"], .row select {
+        padding: 10px 13px;
+        border: 1px solid #e6e9ef;
+        border-radius: 8px;
+        font-size: 13px;
+        outline: none;
+    }
+
+.actions {
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+button {
+    padding: 10px 13px;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 12px;
+    color: #ffffff;
+    font-size: 13px;}
+
+button#add-btn { 
+    background: #340c63; 
+    color: white; }
+    
+button.secondary { 
+    background: #efefef;
+    color:#111827; }
+.filters { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); 
+    gap: 12px; 
+    align-items: end; }
+
+.list-card h2 { 
+    margin-bottom: 10px; }
+
+.todo-list { 
+    list-style: none; 
+    display: grid; 
+    gap: 8px; 
+    padding: 4px 0; }
+
+.todo-item { 
+    display: flex; 
+    gap: 12px; 
+    align-items: center; 
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 1px solid #f1f3f5; 
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(249,250,251,0.9)); }
+
+.todo-main { 
+    flex: 1; 
+    display:flex; 
+    gap:10px; 
+    align-items: center; }
+
+.todo-text { 
+    font-weight: 600; 
+    font-size: 15px; }
+
+
